@@ -1,4 +1,4 @@
-#include<iostream>
+Ôªø#include<iostream>
 using namespace std;
 
 const int ROWS = 3;
@@ -27,16 +27,16 @@ void main()
 	int arr[n] = { 1,2,3,4,5,6,7,8,9,10 };
 	//FillRand(arr, n);
 	Print(arr, n);
-	cout << "—ÛÏÏ‡ ˝ÎÂÏÂÌÚÓ‚ Ï‡ÒÒË‚‡: " << Sum(arr, n) << endl;
-	cout << "—Â‰ÌÂÂ-‡ËÙÏÂÚË˜ÂÒÍÓÂ ˝ÎÂÏÂÌÚÓ‚ Ï‡ÒÒË‚‡: " << Avg(arr, n) << endl;
-	cout << "ÃËÌËÏ‡Î¸ÌÓÂ ÁÌ‡˜ÂÌËÂ ‚ Ï‡ÒÒË‚Â: " << minValueIn(arr, n) << endl;
-	cout << "Ã‡ÍÒËÏ‡Î¸ÌÓÂ ÁÌ‡˜ÂÌËÂ ‚ Ï‡ÒÒË‚Â: " << maxValueIn(arr, n) << endl;
+	cout << "–°—É–º–º–∞ —ç–ª–µ–º–µ–Ω—Ç–æ–≤ –º–∞—Å—Å–∏–≤–∞: " << Sum(arr, n) << endl;
+	cout << "–°—Ä–µ–¥–Ω–µ–µ-–∞—Ä–∏—Ñ–º–µ—Ç–∏—á–µ—Å–∫–æ–µ —ç–ª–µ–º–µ–Ω—Ç–æ–≤ –º–∞—Å—Å–∏–≤–∞: " << Avg(arr, n) << endl;
+	cout << "–ú–∏–Ω–∏–º–∞–ª—å–Ω–æ–µ –∑–Ω–∞—á–µ–Ω–∏–µ –≤ –º–∞—Å—Å–∏–≤–µ: " << minValueIn(arr, n) << endl;
+	cout << "–ú–∞–∫—Å–∏–º–∞–ª—å–Ω–æ–µ –∑–Ω–∞—á–µ–Ω–∏–µ –≤ –º–∞—Å—Å–∏–≤–µ: " << maxValueIn(arr, n) << endl;
 
-	int number_of_shifts;//ÍÓÎË˜ÂÒÚ‚Ó Ò‰‚Ë„Ó‚
-	cout << "¬‚Â‰ËÚÂ ÍÓÎË˜ÂÒÚ‚Ó Ò‰‚Ë„Ó‚: "; cin >> number_of_shifts;
+	int number_of_shifts;//–∫–æ–ª–∏—á–µ—Å—Ç–≤–æ —Å–¥–≤–∏–≥–æ–≤
+	cout << "–í–≤–µ–¥–∏—Ç–µ –∫–æ–ª–∏—á–µ—Å—Ç–≤–æ —Å–¥–≤–∏–≥–æ–≤: "; cin >> number_of_shifts;
 	shiftLeft(arr, n, number_of_shifts);
 	Print(arr, n);
-	cout << "¬‚Â‰ËÚÂ ÍÓÎË˜ÂÒÚ‚Ó Ò‰‚Ë„Ó‚: "; cin >> number_of_shifts;
+	cout << "–í–≤–µ–¥–∏—Ç–µ –∫–æ–ª–∏—á–µ—Å—Ç–≤–æ —Å–¥–≤–∏–≥–æ–≤: "; cin >> number_of_shifts;
 	shiftRight(arr, n, number_of_shifts);
 	Print(arr, n);
 }
@@ -125,8 +125,8 @@ void Sort(int arr[], const int n)
 	{
 		for (int j = i + 1; j < n; j++)
 		{
-			//arr [i] ıÓÚËÏ ÔÏÂÒÚËÚ¸ ÏËÌËÏ‡Î¸ÌÓÂ ÁÌ‡˜ÂÌËÂ
-			//arr [j] ÔÂÂ·Ë‡ÂÏ˚È ˝ÎÂÏÂÌÚ
+			//arr [i] —Ö–æ—Ç–∏–º –ø—Ä–º–µ—Å—Ç–∏—Ç—å –º–∏–Ω–∏–º–∞–ª—å–Ω–æ–µ –∑–Ω–∞—á–µ–Ω–∏–µ
+			//arr [j] –ø–µ—Ä–µ–±–∏—Ä–∞–µ–º—ã–π —ç–ª–µ–º–µ–Ω—Ç
 			if (arr[j] < arr[i])
 			{
 				int buffer = arr[i];
